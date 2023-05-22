@@ -1,4 +1,7 @@
 # I implemented the activity that uploads posts mainly by applying ViewPager2 and the MVVM pattern.
+![a](https://github.com/SeLino98/android_java_techZIP/assets/42768156/21e14e9e-4fbd-4c63-9c31-28646ac2db49)
+![b](https://github.com/SeLino98/android_java_techZIP/assets/42768156/b21c97f0-7435-4fec-8ee3-5cd73a13ef6d)
+![c](https://github.com/SeLino98/android_java_techZIP/assets/42768156/7b5219a1-a9a3-4895-ac05-30b139d7a2b7)
 
 Description:
 In this implementation, I have developed an activity that allows users to upload posts using ViewPager2 for a seamless scrolling experience. The MVVM (Model-View-ViewModel) architectural pattern was employed to ensure separation of concerns and maintain a clean codebase.
@@ -9,9 +12,8 @@ MVVM Pattern: The implementation follows the MVVM architectural pattern, promoti
 Data Binding: The activity utilizes data binding to establish a connection between the UI components and the data model. This facilitates efficient and automatic updates of the UI based on changes in the underlying data.
 Post Upload Functionality: Users can upload posts by filling in the necessary details such as title, description, and media content. The data is validated and stored securely, ensuring a reliable and user-friendly upload process.
 
-=============================================================================================================================================================
-
-주로 ViewPager2와 MVVM 패턴을 적용하여 글을 올리는 액티비티를 구현했습니다.
+============================================================================================
+# 주로 ViewPager2와 MVVM 패턴을 적용하여 글을 올리는 액티비티를 구현했습니다.
 
 
 설명:
