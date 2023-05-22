@@ -1,4 +1,4 @@
-I implemented the activity that uploads posts mainly by applying ViewPager2 and the MVVM pattern.
+# I implemented the activity that uploads posts mainly by applying ViewPager2 and the MVVM pattern.
 
 Description:
 In this implementation, I have developed an activity that allows users to upload posts using ViewPager2 for a seamless scrolling experience. The MVVM (Model-View-ViewModel) architectural pattern was employed to ensure separation of concerns and maintain a clean codebase.
