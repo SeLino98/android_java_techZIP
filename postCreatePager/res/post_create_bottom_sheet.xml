@@ -1,0 +1,62 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="카테고리 설정"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="16dp"/>
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp">
+
+        <RadioButton
+            android:id="@+id/radio_btn_category1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="은평 오랑"/>
+
+        <RadioButton
+            android:id="@+id/radio_btn_category2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="프로그램"/>
+
+        <RadioButton
+            android:id="@+id/radio_btn_category3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="청년 정책"/>
+        <RadioButton
+            android:id="@+id/radio_btn_category4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CJ 나눔 냉장고"/>
+
+        <RadioButton
+            android:id="@+id/radio_btn_category5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="청년도전사업"/>
+
+    </RadioGroup>
+    <Button
+        android:id="@+id/complete_button"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:textSize="18dp"
+        android:layout_gravity="center"
+        android:text="완료"/>
+
+</LinearLayout>
+
