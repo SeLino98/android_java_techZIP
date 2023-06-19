@@ -1,0 +1,75 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".post.create.PostCreateActivity">
+
+    <include
+        android:id="@+id/include_toolbar"
+        layout="@layout/post_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Space
+        android:id="@+id/post_act_space"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        app:layout_constraintTop_toBottomOf="@id/include_toolbar"
+        app:layout_constraintBottom_toTopOf="@id/post_create_tab_layout"
+        />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/post_create_tab_layout"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:clickable="false"
+        android:contentDescription="@string/action_settings"
+        android:longClickable="false"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/post_act_space"
+        app:tabBackground="@drawable/sample_tab_indi"
+        app:tabGravity="fill"
+        app:tabIndicator="@drawable/sample_tab_indi"
+        app:tabIndicatorColor="#07CFAC"
+        app:tabIndicatorFullWidth="true"
+        app:tabIndicatorGravity="stretch"
+        android:background="@drawable/sample_back"
+        app:tabIndicatorHeight="54dp"
+        app:tabInlineLabel="true"
+        app:tabMode="fixed"
+        app:tabPaddingEnd="16dp"
+        app:tabPaddingStart="16dp"
+        app:tabSelectedTextColor="#FFEB3B"
+        app:tabTextColor="#0B0A0A" />
+
+    <TextView
+        android:id="@+id/tab_layout_tv"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/teal_700"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/post_NestedView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/post_create_tab_layout" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/post_NestedView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tab_layout_tv">
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/post_create_viewPager2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
